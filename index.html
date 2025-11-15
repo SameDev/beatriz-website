@@ -16,17 +16,52 @@
             </hgroup>
             <nav>
                 <ul>
-                    <li><a href="#home">Ínicio</a></li>
-                    <li><a href="#quem-sou-eu">Quem sou eu</a></li>
-                    <li><a href="#trabalhos">Trabalhos</a></li>
+                    <li><a href="./index.html">Ínicio</a></li>
+                    <li><a href="./pages/sobre.html">Quem sou eu</a></li>
+                    <li><a href="./pages/trabalhos.html">Trabalhos</a></li>
                     <li>
-                        <a href="#atendimento-online">Atendimento Online</a>
+                        <a href="./pages/atendimento-online.html"
+                            >Atendimento Online</a
+                        >
                     </li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="./pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
-        <main id="app"></main>
+        <main>
+            <article>
+                <section class="slider">
+                    <div class="slider-container">
+                        <figure class="slider-item">
+                            <img
+                                src="images/slider-image-1.png"
+                                alt="Slider Image 1"
+                            />
+                        </figure>
+                        <figure class="slider-item">
+                            <img
+                                src="images/slider-image-2.png"
+                                alt="Slider Image 2"
+                            />
+                        </figure>
+                        <figure class="slider-item">
+                            <img
+                                src="images/slider-image-3.png"
+                                alt="Slider Image 3"
+                            />
+                        </figure>
+                    </div>
+                    <button class="slider-prev" aria-label="Slide anterior">
+                        ‹
+                    </button>
+                    <button class="slider-next" aria-label="Próximo slide">
+                        ›
+                    </button>
+
+                    <div class="slider-indicators"></div>
+                </section>
+            </article>
+        </main>
         <footer>
             <div class="footer-content">
                 <div class="footer-section">
@@ -80,7 +115,6 @@
                 </p>
             </div>
         </footer>
-        <script src="./app.js"></script>
         <script src="./scripts/slider.js"></script>
     </body>
 </html>
