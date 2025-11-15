@@ -62,4 +62,10 @@ function initSlider() {
 
   createIndicators();
   updateSlider();
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % sliderItems.length;
+    updateSlider();
+  }, 5000);
 }
+
+document.addEventListener("DOMContentLoaded", initSlider);
