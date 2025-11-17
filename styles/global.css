@@ -34,39 +34,43 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 10dvh;
+    max-width: 100%;
+    overflow-x: hidden;
+    gap: 1rem;
+}
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-    }
+header nav ul {
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
 
-    header a hgroup {
-        text-decoration: none;
-        color: var(--background-secondary);
-        transition: all 0.3s ease;
-    }
+header a hgroup {
+    text-decoration: none;
+    color: var(--background-secondary);
+    transition: all 0.3s ease;
+}
 
-    nav ul li {
-        font-family: var(--font-title);
-        font-size: 1rem;
-        font-weight: bold;
-    }
+header nav ul li {
+    font-family: var(--font-title);
+    font-size: 1rem;
+    font-weight: bold;
+}
 
-    nav ul li a {
-        text-decoration: none;
-        color: var(--background-secondary);
-        transition: all 0.3s ease;
-    }
+header nav ul li a {
+    text-decoration: none;
+    color: var(--background-secondary);
+    transition: all 0.3s ease;
+}
 
-    nav ul li a:hover {
-        text-decoration: underline;
-        color: var(--primary-color);
-        transition: color 0.3s ease;
-        text-decoration-color: var(--primary-color);
-        text-decoration-thickness: 2px;
-        text-decoration-style: solid;
-    }
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
 }
 
 main {
@@ -150,6 +154,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    
+
+
     footer {
         padding: 2rem 1rem 1rem;
     }

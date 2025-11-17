@@ -10,7 +10,7 @@ class IndexHeader extends HTMLElement {
         <nav role="navigation" aria-label="Menu principal">
           <ul>
             <li>
-              <a href="./index.html" aria-current="page">Início</a>
+              <a href="./" aria-current="page">Início</a>
             </li>
             <li>
               <a href="./pages/sobre.html">Quem sou eu</a>
@@ -19,10 +19,10 @@ class IndexHeader extends HTMLElement {
               <a href="./pages/trabalhos.html">Trabalhos</a>
             </li>
             <li>
-              <a href="./pages/atendimento-online.html">Atendimento Online</a>
+              <a href="./pages/contato.html">Contato</a>
             </li>
             <li>
-              <a href="./pages/contato.html">Contato</a>
+              <a href="./pages/atendimento-online.html">Atendimento Online</a>
             </li>
           </ul>
         </nav>
@@ -42,7 +42,7 @@ class PagesHeader extends HTMLElement {
         <nav role="navigation" aria-label="Menu principal">
           <ul>
             <li>
-              <a href="../index.html" aria-current="page">Início</a>
+              <a href="../" aria-current="page">Início</a>
             </li>
             <li>
               <a href="./sobre.html">Quem sou eu</a>
@@ -51,10 +51,10 @@ class PagesHeader extends HTMLElement {
               <a href="./trabalhos.html">Trabalhos</a>
             </li>
             <li>
-              <a href="./atendimento-online.html">Atendimento Online</a>
+            <a href="./contato.html">Contato</a>
             </li>
             <li>
-              <a href="./contato.html">Contato</a>
+              <a href="./atendimento-online.html">Atendimento Online</a>
             </li>
           </ul>
         </nav>
