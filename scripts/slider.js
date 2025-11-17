@@ -28,7 +28,6 @@ function initSlider() {
     sliderItems.forEach((_, index) => {
       const indicator = document.createElement("button");
       indicator.classList.add("slider-indicator");
-      indicator.setAttribute("aria-label", `Ir para slide ${index + 1}`);
       indicator.addEventListener("click", () => {
         currentSlide = index;
         updateSlider();

@@ -43,6 +43,7 @@ header nav ul {
     flex-wrap: wrap;
     list-style: none;
     display: flex;
+    justify-content: end;
     gap: 1rem;
 }
 
@@ -158,9 +159,6 @@ footer {
         justify-content: center;
         gap: 0.5rem;
     }
-
-    
-
 
     footer {
         padding: 2rem 1rem 1rem;
