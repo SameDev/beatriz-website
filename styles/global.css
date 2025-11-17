@@ -41,6 +41,12 @@ header {
         gap: 1rem;
     }
 
+    header a hgroup {
+        text-decoration: none;
+        color: var(--background-secondary);
+        transition: all 0.3s ease;
+    }
+
     nav ul li {
         font-family: var(--font-title);
         font-size: 1rem;
