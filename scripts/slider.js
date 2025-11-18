@@ -23,6 +23,22 @@ function initSlider() {
 
   let currentSlide = 0;
 
+  let interval;
+
+  // função que para o intervalo
+  function stopInterval(){
+    if(interval) clearInterval(interval);
+  }
+  // nova função dee iniciar intervalo de troca 
+  function resetInterval() {
+    stopInterval();
+    interval = setInterval(() => {
+      currentSlide = (currentSlide + 1) % sliderItems.length;
+      updateSlider();
+    }, 5000);
+  }
+
+
   function createIndicators() {
     sliderIndicators.innerHTML = "";
     sliderItems.forEach((_, index) => {
@@ -31,6 +47,8 @@ function initSlider() {
       indicator.addEventListener("click", () => {
         currentSlide = index;
         updateSlider();
+        resetInterval();
+        
       });
       sliderIndicators.appendChild(indicator);
     });
@@ -52,19 +70,17 @@ function initSlider() {
   sliderPrev.addEventListener("click", () => {
     currentSlide = (currentSlide - 1 + sliderItems.length) % sliderItems.length;
     updateSlider();
+    resetInterval();
   });
 
   sliderNext.addEventListener("click", () => {
     currentSlide = (currentSlide + 1) % sliderItems.length;
     updateSlider();
+    resetInterval();
   });
 
   createIndicators();
   updateSlider();
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % sliderItems.length;
-    updateSlider();
-  }, 5000);
+  resetInterval();
 }
-
 document.addEventListener("DOMContentLoaded", initSlider);
