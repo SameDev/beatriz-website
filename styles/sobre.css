@@ -212,7 +212,7 @@
 .cta-section {
     background: linear-gradient(135deg, var(--primary-color) 0%, #4a8fa5 100%);
     padding: 3rem;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     text-align: center;
     color: white;
 }
