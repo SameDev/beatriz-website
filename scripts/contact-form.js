@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-      window.open(whatsappURL, "_blank");
       showSuccessMessage();
+      setTimeout(() => {
+        window.open(whatsappURL, "_blank");
+      }, 2250);
     });
   }
 
@@ -77,7 +79,7 @@ function showSuccessMessage() {
   successDiv.className = "success-message";
   successDiv.innerHTML = `
         <div class="success-content">
-            <span class="success-]">✓</span>
+            <span class="success-icon">✓</span>
             <p><strong>Mensagem enviada com sucesso!</strong></p>
             <p>Você será redirecionado para o WhatsApp.</p>
         </div>
@@ -137,7 +139,7 @@ function showSuccessMessage() {
     successDiv.style.animation = "slideOut 0.3s ease";
     setTimeout(() => {
       document.body.removeChild(successDiv);
-    }, 300);
+    }, 250);
   }, 3000);
 }
 
