@@ -154,10 +154,32 @@ footer {
     opacity: 0.7 !important;
 }
 
+@media (max-width: 1024px) {
+    header {
+        align-items: space-between;
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     header {
-        justify-content: center;
+        justify-content: space-between;
         gap: 0.5rem;
+    }
+    
+    header nav ul{
+        flex-direction: column;
+    }
+    
+    header nav ul li{
+        background-color: var(--primary-color);
+        padding: 4px;
+        border-radius:  5px;
+    }
+    
+    header nav ul li a{
+        min-width: fit-content;
+        color: var(--background-secondary);
     }
 
     footer {
