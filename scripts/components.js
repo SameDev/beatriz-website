@@ -10,7 +10,7 @@ class IndexHeader extends HTMLElement {
         <nav role="navigation" aria-label="Menu principal">
           <ul>
             <li>
-              <a href="./" aria-current="page">Início</a>
+              <a href="./index.html" aria-current="page">Início</a>
             </li>
             <li>
               <a href="./pages/sobre.html">Quem sou eu</a>
@@ -42,7 +42,7 @@ class PagesHeader extends HTMLElement {
         <nav role="navigation" aria-label="Menu principal">
           <ul>
             <li>
-              <a href="../" aria-current="page">Início</a>
+              <a href="../index.html" aria-current="page">Início</a>
             </li>
             <li>
               <a href="./sobre.html">Quem sou eu</a>
