@@ -67,7 +67,7 @@ class FooterComponent extends HTMLElement {
     super();
     this.innerHTML = `
     <footer>
-        <div class="footer-content">
+        <article class="footer-content">
             <section class="footer-section">
                 <hgroup class="logo">
                     <h2 id="footer-about">Beatriz Conradt</h2>
@@ -107,9 +107,9 @@ class FooterComponent extends HTMLElement {
                     <li>Dificuldades de Aprendizagem</li>
                 </ul>
             </section>
-        </div>
+        </article>
 
-        <div class="footer-bottom">
+        <article class="footer-bottom">
             <p>
                 &copy; 2025 Beatriz Conradt. Todos os direitos reservados.
             </p>
@@ -117,7 +117,7 @@ class FooterComponent extends HTMLElement {
                 O atendimento psicanalítico respeita o código de ética
                 profissional, garantindo sigilo absoluto.
             </p>
-        </div>
+        </article>
     </footer>`;
   }
 }
